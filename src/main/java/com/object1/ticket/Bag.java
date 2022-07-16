@@ -8,17 +8,14 @@ public class Bag {
     private Ticket ticket; // 티켓
 
 
-    // 초대장 없이 현금만 있는 경우
     public Bag(long amount) {
         this(null, amount);
     }
 
-    // 초대장, 현금이 있는 경우
     public Bag(Invitation invitation, long amount) {
         this.invitation = invitation;
         this.amount = amount;
     }
-
 
     public boolean hasInvitation() {
         return invitation != null;
@@ -39,6 +36,5 @@ public class Bag {
     public void plusAmount(Long amount) {
         this.amount += amount;
     }
-
 
 }
