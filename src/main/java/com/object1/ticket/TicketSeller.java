@@ -34,8 +34,10 @@ public class TicketSeller {
 //            audience.getBag().setTicket(ticket);
 //        }
 
-        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
 
+//        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+
+        ticketOffice.sellTicketTo(audience);
     }
 
 }
